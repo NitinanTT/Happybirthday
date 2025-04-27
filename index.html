@@ -1,37 +1,64 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>บอกรักแฟน</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="login-form">
-        <h2>กรุณาใส่รหัสเพื่อเข้าถึงเว็บไซต์</h2>
-        <input type="password" id="password" placeholder="กรอกรหัส">
-        <button onclick="checkPassword()">เข้าสู่เว็บไซต์</button>
-    </div>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #Afd5F0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
-    <div id="main-content" style="display:none;">
-        <header>
-            <h1>รักเธอมากๆ นะ</h1>
-        </header>
-        <section>
-            <h2>สุขสันต์วันเกิด 28 ตุลาคม 2568</h2>
-            <p>ฉันอยากบอกว่า...</p>
-            <div class="media">
-                <img src="your-photo.jpg" alt="รูปคู่กับแฟน" id="couple-photo">
-                <video controls>
-                    <source src="your-video.mp4" type="video/mp4">
-                    ขอโทษ, เบราว์เซอร์ของคุณไม่รองรับการแสดงวีดีโอนี้.
-                </video>
-            </div>
-            <p id="message">...</p>
-            <button onclick="nextQuestion()">ต่อไป</button>
-        </section>
-    </div>
+header {
+    background-color: #ff66b2;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+h2 {
+    color: #333;
+}
+
+.media {
+    margin: 20px 0;
+}
+
+#couple-photo {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+video {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#login-form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff66b2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e55a99;
+}
